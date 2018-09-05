@@ -1,0 +1,29 @@
+Initial subset
+    - limit 10,000 rows
+
+Goal 1: Cleaning the dataset
+    - Columns:
+        - Ignore:
+            - JobID
+            - JobIDRaw
+            - Cluster
+            - UID
+            - JobName
+        - Keep
+            - Partition
+            - Account
+            - Group
+            - GID
+            - User
+            - Submit
+            - Eligible
+            - Start
+            - End
+            - Elapsed
+            - ExitCode
+            - State
+            - the rest...
+    - Plots to visualize data
+        - box plot to see if there outliers in number of jobs run per User and per Group
+        - time series (monthly trend)
+        - Table of Node failures by NodeList
