@@ -34,4 +34,18 @@ Goal 1: Cleaning the dataset
     - Plots to visualize data
         - box plot to see if there outliers in number of jobs run per User and per Group
         - time series (monthly trend)
-        - Table of Node failures by NodeList
+        - Table of Node failures by NodeList [Alex - refers to Node question below]
+        
+Q1: Davis
+    1. As you request more ram, how does that impact your Queue time?
+    2. As you request more time, how does that impact your Queue time? [Davis]
+        **Queue time = Start time - Submit time (time it is waiting in the Queue)
+
+Q2: Alex
+    3. Nodes that are leading to a disproportionate number of failures [Alex]
+        - State column: message saying something along the lines of "Node Failure" --> what job is that node running on?
+
+Q3: Amrit
+    4. Problematic users who are running lots of sort jobs [Amrit]
+        - If a user runs greater than 500 jobs, each less than 5 minutes, within 4 hours
+            ○ If you don't catch anyone in this category, expand slowly until you start collecting problematic users

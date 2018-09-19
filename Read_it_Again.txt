@@ -1,0 +1,16 @@
+# Converting elapsed_hms to date time format
+
+def elapsed_converter(x):
+    print(type(x.elapsed_hms), type(x['elapsed_days']))
+    
+    
+    
+    return timedelta(
+         hours=(int(x['elapsed_days'][0]) * 24) + int(x['elapsed_hms'][0:2]),
+         minutes=int(x['elapsed_hms'][3:5]),
+         seconds=int(x['elapsed_hms'][6:])
+     )
+
+accre_user_elapsed['elapsed_time'] = accre_user_elapsed.apply(elapsed_converter, axis=1)
+
+accre_user_elapsed.head()

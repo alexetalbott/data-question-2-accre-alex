@@ -1,0 +1,2 @@
+To find users with rolling windows less than 4hours
+use rolling windows in python
